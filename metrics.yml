@@ -1,0 +1,19 @@
+---
+current:
+  tested_concurrency: 400
+  tested_sample_size: 10_000
+
+upcoming_targets:
+- name: SQBS
+  concurrency: 500
+  concurrency_state: ok
+  sample_size: 10_000
+  sample_size_state: good
+  date: 2018-06-13
+
+- name: MBS
+  concurrency: 675
+  concurrency_state: ok
+  sample_size: 10_000
+  sample_size_state: good
+  date: 2018-06-19

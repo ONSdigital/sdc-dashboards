@@ -69,37 +69,26 @@
 	<h1>RAS RM Concurrency</h1>
 	<div class="box">
 		<h2> Tested Concurrency: </h2>
-		<div class="value good">
-			400
-		</div>
+		<div class="value good">{{  current.tested_concurrency }}</div>
 
 	</div>
 	<div class="box">
 		<h2> Tested Sample Size: </h2>
-		<div class="value good">
-			10,000
-		</div>
+		<div class="value good">{{ current.tested_sample_size }}</div>
 
 	</div>
+	{% for target in upcoming_targets %}
 	<div class="box">
-		<h2>Next Target: SQBS</h2>
+	  <h2>Next Target: {{ target.name }}</h2>
 		<table>
-			<tr><th>Concurrency: </th><td class="ok">500</td></tr>
-			<tr><th>Sample Size: </th><td class="good">10,000</td></tr>
-			<tr><th>Target Date: </th><td>13th of June</td></tr>
+		  <tr><th>Concurrency: </th><td class="{{ target.concurrency_state }}">{{ target.concurrency }}</td></tr>
+		  <tr><th>Sample Size: </th><td class="{{ target.sample_size_state }}">{{ target.sample_size }}</td></tr>
+		  <tr><th>Target Date: </th><td>{{ target.date }}</td></tr>
 		</table>
 	</div>
-
-	<div class="box">
-		<h2>Target: MBS</h2>
-		<table>
-			<tr><th>Concurrency: </th><td class="ok">675</td></tr>
-			<tr><th>Sample Size: </th><td class="good">10,000</td></tr>
-			<tr><th>Target Date: </th><td>19th of June</td></tr>
-		</table>
-	</div>
+	{% endfor %}
 	<div class="footer">
-		To update add a commit to <a href="https://github.com/ONSdigital/ras-deploy/tree/master/dashboards">https://github.com/ONSdigital/ras-deploy/tree/master/dashboards</a>
+		To update add a commit to <a href="https://github.com/ONSdigital/ras-dashboards">https://github.com/ONSdigital/sdc-dashboards</a>
 	</div>
 </body>
 </html>
