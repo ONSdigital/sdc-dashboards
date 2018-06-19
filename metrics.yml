@@ -1,7 +1,7 @@
 ---
 current:
-  tested_concurrency: 400
-  tested_sample_size: 10_000
+  tested_concurrency: 650
+  tested_sample_size: 35_000
 
 upcoming_targets:
 - name: SQBS
