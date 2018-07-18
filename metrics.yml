@@ -4,13 +4,6 @@ current:
   tested_sample_size: 35_000
 
 upcoming_targets:
-- name: MBS pt 2
-  concurrency: 1044
-  concurrency_state: good
-  sample_size: 20_000
-  sample_size_state: good
-  date: 2018-07-13
-
 - name: MBS pt 3
   concurrency: 1406
   concurrency_state: good
