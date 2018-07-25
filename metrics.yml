@@ -10,3 +10,10 @@ upcoming_targets:
   sample_size: 34_000
   sample_size_state: good
   date: 2018-08-02
+
+- name: ASHE
+  concurrency: 2000
+  concurrency_state: ok
+  sample_size: 110_000
+  sample_size_state: ok
+  date: April 2019
